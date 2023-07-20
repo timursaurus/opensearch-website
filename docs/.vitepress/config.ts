@@ -3,7 +3,7 @@ import { defineConfig, } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "OpenSearch Project",
-
+  outDir: 'dist',
   lang: "en-US",
   // description: "A VitePress Site",
   // cleanUrls: true,
@@ -77,7 +77,12 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+
+      { icon: "github", link: "https://github.com/opensearch-project" },
+      { icon: 'twitter', link: 'https://twitter.com/OpenSearchProj' },
+      { icon: 'youtube', link: 'https://www.youtube.com/c/OpenSearchProject' },
+      { icon: 'facebook', link: 'https://www.facebook.com/OpenSearchProject/' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/company/opensearch-project/' }
     ],
   },
 });
