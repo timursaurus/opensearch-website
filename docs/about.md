@@ -1,5 +1,4 @@
 ---
-layout: fullwidth
 title: About
 ---
 

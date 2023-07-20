@@ -15,7 +15,6 @@ For more information on the changes planned for each release, please see the [Pr
 
 Note:  We have not added a major release to the 2023 schedule yet.  If/when we add one, it will replace a minor release in the 2.x line.  See below for criteria for a major releases.
 
-<div class="table-styler"></div>
 
 | Release Number| Code Freeze Date  | Release Date          |
 |:--------------|:------------------|:-------------------   |
@@ -56,7 +55,6 @@ The duration of the maintenance window will vary from product to product and rel
 
 The software maintainers will not back-port fixes or features to versions outside of the maintenance window. That said, PRs with said back-ports are welcome and will follow the project’s [review process](https://github.com/opensearch-project/OpenSearch/blob/main/CONTRIBUTING.md#review-process). No new releases will result from these changes, but interested parties can [create their own distribution](https://github.com/opensearch-project/opensearch-build#building-and-testing-an-opensearch-distribution) from the updated source after the PRs are merged.
 
-<div class="table-styler"></div>
 
 | Major Version | Latest Minor Version |   Status    | Initial Release | Maintenance Window Start | Maintenance Window End |
 |:--------------|:---------------------|:-----------:|:---------------:|:------------------------:|:----------------------:|
@@ -69,7 +67,6 @@ The software maintainers will not back-port fixes or features to versions outsid
 
 ### 2022 ###
 
-<div class="table-styler"></div>
 
 | Release Number | Code Freeze Date   | Release Date       |
 |:---------------|:-------------------|:-------------------|
@@ -85,7 +82,6 @@ The software maintainers will not back-port fixes or features to versions outsid
 
 ## Change Log ##
 
-<div class="table-styler"></div>
 
 | Date         | Change | Reason          |
 |:-------------|:-------|:----------------|

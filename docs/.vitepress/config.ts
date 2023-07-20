@@ -5,13 +5,10 @@ export default defineConfig({
   title: "OpenSearch Project",
   outDir: 'dist',
   lang: "en-US",
-  // description: "A VitePress Site",
+  description: "OpenSearch Project Website",
   // cleanUrls: true,
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-
-
     logo: '/opensearch-logo.svg',
     nav: [
       {
@@ -77,7 +74,6 @@ export default defineConfig({
     },
 
     socialLinks: [
-
       { icon: "github", link: "https://github.com/opensearch-project" },
       { icon: 'twitter', link: 'https://twitter.com/OpenSearchProj' },
       { icon: 'youtube', link: 'https://www.youtube.com/c/OpenSearchProject' },
