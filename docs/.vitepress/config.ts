@@ -49,15 +49,15 @@ export default defineConfig({
   lang: "en-US",
   description: "OpenSearch Project Website",
   themeConfig: {
-
     logo: "logo.svg",
     search: {
       provider: "local",
     },
     nav,
     editLink: {
-      pattern: 'https://github.com/timursaurus/opensearch-website/edit/main/docs/:path',
-      text: 'Suggest changes to this page',
+      pattern:
+        "https://github.com/timursaurus/opensearch-website/edit/main/docs/:path",
+      text: "Suggest changes to this page",
     },
     sidebar: [
       {
@@ -80,6 +80,15 @@ export default defineConfig({
           { text: "Vector Database", link: "platform/search/vector-database" },
           { text: "Live Demo", link: "https://playground.opensearch.org" },
           { text: "Performance Benchmarks", link: "/benchmarks" },
+        ],
+      },
+      {
+        text: "Get Involved",
+        items: [
+          { text: "Code of Conduct", link: "/code-of-conduct" },
+          { text: "Forum", link: "https://forum.opensearch.org/" },
+          { text: "Github", link: "https://github.com/opensearch-project" },
+          { text: "Slack", link: "/slack" },
         ],
       },
     ],
