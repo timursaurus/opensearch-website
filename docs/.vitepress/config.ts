@@ -6,10 +6,11 @@ export default defineConfig({
   outDir: 'dist',
   lang: "en-US",
   description: "OpenSearch Project Website",
-  // cleanUrls: true,
-
   themeConfig: {
-    logo: '/opensearch-logo.svg',
+    logo: 'logo.svg',
+    search: {
+      provider: 'local',
+    },
     nav: [
       {
         text: "OpenSearchCon",
