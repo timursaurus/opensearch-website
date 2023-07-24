@@ -42,12 +42,25 @@ const nav: DefaultTheme.NavItem[] = [
     ],
   },
 ];
+const title = "OpenSearch Project";
+const description = "OpenSearch Project Website";
 
 export default defineConfig({
-  title: "OpenSearch Project",
+  title,
   outDir: "dist",
   lang: "en-US",
-  description: "OpenSearch Project Website",
+  description,
+  head: [
+    ["link", { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" }],
+    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:title', content: title }],
+    ['meta', { name: 'og:description', content: description }],
+    ['meta', { name: 'twitter:title', content: title }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+
+  ],
   themeConfig: {
     logo: "logo.svg",
     search: {
