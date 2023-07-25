@@ -1,4 +1,5 @@
 import { defineConfig, DefaultTheme } from "vitepress";
+import { generateFAQ } from "./genFaq";
 
 // https://vitepress.dev/reference/site-config
 
@@ -45,6 +46,10 @@ const nav: DefaultTheme.NavItem[] = [
 const title = "OpenSearch Project";
 const description = "OpenSearch Project Website";
 
+function generate() {
+  generateFAQ();
+}
+
 export default defineConfig({
   title,
   outDir: "dist",
@@ -52,15 +57,23 @@ export default defineConfig({
   description,
   head: [
     ["link", { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" }],
-    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
-    ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }],
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { name: 'og:title', content: title }],
-    ['meta', { name: 'og:description', content: description }],
-    ['meta', { name: 'twitter:title', content: title }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-
+    ["link", { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" }],
+    [
+      "link",
+      {
+        rel: "alternate icon",
+        href: "/favicon.ico",
+        type: "image/png",
+        sizes: "16x16",
+      },
+    ],
+    ["meta", { property: "og:type", content: "website" }],
+    ["meta", { name: "og:title", content: title }],
+    ["meta", { name: "og:description", content: description }],
+    ["meta", { name: "twitter:title", content: title }],
+    ["meta", { name: "twitter:card", content: "summary_large_image" }],
   ],
+  buildEnd: generate,
   themeConfig: {
     logo: "logo.svg",
     search: {
